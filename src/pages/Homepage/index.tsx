@@ -59,13 +59,48 @@ const Homepage = () => {
         <ContainerResults>
           <p className="title-results">VOCÊ RECEBERÁ:</p>
           <div className="results">
-            <span>Amanhã: R$ {Object.values(results)[0] / 100}</span>
+            <span>Amanhã: 
+              <p>
+                {
+                  Object.values(results)[0] ?
+                    `R$ ${(Object.values(results)[0] / 100).toFixed(2)}`.replace(".", ",")
+                    :
+                    "R$ 0,00"
+                }
+              </p></span>
 
-            <span>Em 15 dias: R$ {Object.values(results)[1] / 100}</span>
+            <span> Em 15 dias:
+              <p>
+                {
+                  Object.values(results)[1] ?
+                  `R$ ${(Object.values(results)[1] / 100).toFixed(2)}`.replace(".", ",")
+                    :
+                    "R$ 0,00"
+                }
+              </p>
+            </span>
 
-            <span>Em 30 dias: R$ {Object.values(results)[2] / 100}</span>
+            <span>Em 30 dias: 
+              <p>
+                {
+                  Object.values(results)[2] ?
+                  `R$ ${(Object.values(results)[2] / 100).toFixed(2)}`.replace(".", ",")
+                    :
+                    "R$ 0,00"
+                }
+              </p>
+            </span>
 
-            <span>Em 90 dias: R$ {Object.values(results)[3] / 100}</span>
+            <span>Em 90 dias: 
+              <p>
+                {
+                  Object.values(results)[3] ?
+                  `R$ ${(Object.values(results)[3] / 100).toFixed(2)}`.replace(".", ",")
+                    :
+                    "R$ 0,00"
+                }
+              </p>
+            </span>
           </div>
         </ContainerResults>
       </MainContainer>
