@@ -14,7 +14,7 @@ const Container = styled.fieldset`
   }
 
   input {
-    width: 100vw;
+    width: 100%;
     padding: 0.5rem;
     border: solid 1px var(--grey-2);
     border-radius: 0.5rem;
