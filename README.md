@@ -27,3 +27,35 @@
       "days": [0, 15, 30, 90]
     }
   ```
+
+> Instalação de dependências
+
+* Faça clone desse repositório na máquina;
+
+* Na pasta do projeto, execute o comando:
+  
+```
+  yarn install
+```
+
+ou
+
+```
+  npm install
+```
+
+> Executando projeto
+
+* Execute o comando:
+  
+```
+  yarn start
+```
+
+ou
+
+```
+  npm start
+```
+
+O projeto será executado localmente no link: http://localhost:3000
