@@ -7,6 +7,34 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   background-color: var(--blue-1);
+  color: var(--blue-3);
+
+  .title-inputs {
+    font-size: 2rem;
+    color: var(--grey-4);
+  }
+
+  .title-results {
+    font-size: 1.5rem;
+    border-bottom: solid 1px var(--blue-3);
+  }
+
+  .results {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.25rem;
+
+    span {
+      display: flex;
+      gap: 1rem;
+      color: var(--blue-3);
+
+      p {
+        color: var(--blue-4);
+      }
+    }
+  }
 `;
 
 export default Container;
