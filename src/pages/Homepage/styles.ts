@@ -33,6 +33,20 @@ const Container = styled.div`
       p {
         color: var(--blue-4);
       }
+
+      svg {
+        font-size: 1rem;
+        animation: svg infinite 500ms linear;
+      }
+    }
+  }
+
+  @keyframes svg {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
     }
   }
 `;
